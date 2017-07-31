@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/WearingNowView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <include layout="@layout/content_scokinf"/>
+
+            <include layout="@layout/content_scokinf2" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:text="In the Drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/cardView"
+        android:layout_alignStart="@+id/cardView" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <include layout="@layout/content_scokinf"/>
+
+            <include layout="@layout/content_scokinf2" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:text="+Add New Socks?"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_below="@+id/cardView2"
+        android:layout_alignStart="@+id/cardView2"
+        android:layout_alignEnd="@+id/cardView2"
+        android:elevation="5dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="@string/mylink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:autoLink="all"
+        android:gravity="center_horizontal"
+        android:selectAllOnFocus="false"
+        android:linksClickable="false"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="WearingNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WearingNowView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cardView" />
+
+
+</RelativeLayout>

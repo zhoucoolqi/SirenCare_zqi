@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jj.app0722_3.LoginActivity"
+    android:weightSum="1">
+
+    <!-- Login progress -->
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.47">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_up_border">
+            <!--android:hintTextAppearance="@style/EditText_hintTextAppearance"-->
+            <AutoCompleteTextView
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:background="@null" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/login_mid_border">
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="Last Name"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPersonName"
+                android:maxLines="2"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/login_mid_border">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Email"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textEmailAddress"
+                android:maxLines="2"
+                android:background="@null"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/login_down_border">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="2"
+                android:background="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/create_cta"
+            android:elevation="2dp"
+            android:id="@+id/cabtn"
+            android:background="@android:color/transparent" />
+
+        <CheckBox
+            android:text="By Creating an account you're agreeing to our term of use,and Privacy Policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="10sp"
+            android:id="@+id/checkBox"
+            android:textColor="@android:color/darker_gray"
+            android:textColorLink="@color/colorAccent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+
+            android:background="@drawable/gradientline"
+            android:layout_height="2dp" />
+
+        <Button
+            android:text="          f          Create with Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/buttonfacebook"
+            android:textAllCaps="false"
+            android:background="@drawable/createfacebook"
+            android:layout_marginTop="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:elevation="0dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:text="          G         Create with google"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/buttongoogle"
+            android:textAllCaps="false"
+            android:background="@drawable/createfacebook"
+            android:layout_marginTop="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:elevation="0dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alreadyhaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:text="Already have an account?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:gravity="center_horizontal"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:layout_marginTop="18dp" />
+        <TextView
+            android:text="@string/signinlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:autoLink="all"
+            android:gravity="center_horizontal"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            android:layout_marginTop="18dp"
+            android:textColor="@android:color/holo_blue_light" />
+    </LinearLayout>
+</LinearLayout>

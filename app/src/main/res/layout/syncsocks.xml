@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:text="Set up your socks..."
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:id="@+id/textViewsetting"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorSetting"
+        android:layout_marginTop="106dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/textInputLayout"
+        android:layout_below="@+id/textViewsetting"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/serialnumber"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Type Serial Number"
+            android:textColorHint="#0004ff"
+            android:background="@drawable/shape2"
+            android:textColor="@android:color/white"
+
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:gravity="center" />
+    </android.support.design.widget.TextInputLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/creataccmain"
+            android:id="@+id/imageButtonacc"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="129dp"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+
+
+
+</RelativeLayout>

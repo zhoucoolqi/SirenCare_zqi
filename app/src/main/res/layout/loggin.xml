@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redlog"
+        android:layout_marginTop="11dp"
+        android:id="@+id/imageViewlog"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/imageViewlog"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:id="@+id/imageView1"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_toStartOf="@+id/imageViewheart"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="your"
+            android:textSize="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:id="@+id/textView"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/redfeet"
+            android:id="@+id/imageViewredfeet"
+            android:padding="12dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/creataccmain"
+        android:id="@+id/imageButtonacc"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/skip"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Skip"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login"
+        android:id="@+id/imageButtonlogin"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/imageButtonacc"
+        android:layout_alignStart="@+id/imageButtonacc" />
+
+</RelativeLayout>
